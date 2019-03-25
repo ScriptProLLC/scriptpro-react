@@ -10,7 +10,7 @@ npx create-scriptpro-react-app my-app
 
 ## Docs
 
-See [create-react-app docs](https://facebook.github.io/create-rea…). See below for changes.
+See [create-react-app docs](https://facebook.github.io/create-react-app/). See below for changes.
 
 ## Changes
 
