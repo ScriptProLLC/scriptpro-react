@@ -95,9 +95,9 @@ module.exports = function(
 
   // Setup the script rules
   appPackage.scripts = {
-    start: 'react-scripts start',
-    build: 'react-scripts build',
-    test: 'react-scripts test',
+    start: 'scriptpro-react-scripts start',
+    build: 'scriptpro-react-scripts build',
+    test: 'scriptpro-react-scripts test',
     // SCRIPTPRO CHANGE
     // eject: 'react-scripts eject',
     // END SCRIPTPRO CHANGE

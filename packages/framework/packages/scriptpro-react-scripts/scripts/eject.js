@@ -258,8 +258,9 @@ inquirer
         content =
           content
             // Remove react-scripts types
+            // SCRIPTPRO CHANGE
             .replace(
-              /^\s*\/\/\/\s*<reference\s+types.+?"react-scripts".*\/>.*(?:\n|$)/gm,
+              /^\s*\/\/\/\s*<reference\s+types.+?"scriptpro-react-scripts".*\/>.*(?:\n|$)/gm,
               ''
             )
             .trim() + os.EOL;

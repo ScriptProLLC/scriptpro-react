@@ -42,9 +42,9 @@ module.exports = class TestSetup {
       });
     }
     packageJson.scripts = Object.assign({}, packageJson.scripts, {
-      start: 'react-scripts start',
-      build: 'react-scripts build',
-      test: 'react-scripts test',
+      start: 'scriptpro-react-scripts start',
+      build: 'scriptpro-react-scripts build',
+      test: 'scriptpro-react-scripts test',
     });
     packageJson.license = packageJson.license || 'UNLICENSED';
     await fs.writeJson(
@@ -72,14 +72,17 @@ module.exports = class TestSetup {
             __dirname,
             '../../../..',
             'packages',
-            'react-scripts',
+            // SCRIPTPRO CHANGE
+            'scriptpro-react-scripts',
             'bin',
-            'react-scripts.js'
+            'scriptpro-react-scripts.js'
           )
         ),
-        path.join(this.testDirectory, 'node_modules', '.bin', 'react-scripts')
+        // SCRIPTPRO CHANGE
+        path.join(this.testDirectory, 'node_modules', '.bin', 'scriptpro-react-scripts')
       );
-      await execa('yarnpkg', ['link', 'react-scripts'], {
+      // SCRIPTPRO CHANGE
+      await execa('yarnpkg', ['link', 'scriptpro-react-scripts'], {
         cwd: this.testDirectory,
       });
     }

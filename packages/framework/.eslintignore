@@ -1,6 +1,6 @@
 node_modules/
 build
 my-app*
-packages/react-scripts/template
-packages/react-scripts/fixtures
+packages/scriptpro-react-scripts/template
+packages/scriptpro-react-scripts/fixtures
 fixtures/
