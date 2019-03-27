@@ -98,7 +98,9 @@ module.exports = function(
     start: 'react-scripts start',
     build: 'react-scripts build',
     test: 'react-scripts test',
-    eject: 'react-scripts eject',
+    // SCRIPTPRO CHANGE
+    // eject: 'react-scripts eject',
+    // END SCRIPTPRO CHANGE
   };
 
   // Setup the eslint config
@@ -232,7 +234,9 @@ module.exports = function(
   console.log(chalk.cyan(`  ${displayedCommand} test`));
   console.log('    Starts the test runner.');
   console.log();
-  console.log(
+  // SCRIPTPRO CHANGE
+  // commented out reference to eject command
+  /*console.log(
     chalk.cyan(`  ${displayedCommand} ${useYarn ? '' : 'run '}eject`)
   );
   console.log(
@@ -241,7 +245,8 @@ module.exports = function(
   console.log(
     '    and scripts into the app directory. If you do this, you can’t go back!'
   );
-  console.log();
+  console.log();*/
+  // END SCRIPTPRO CHANGE
   console.log('We suggest that you begin by typing:');
   console.log();
   console.log(chalk.cyan('  cd'), cdpath);
