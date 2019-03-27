@@ -126,9 +126,10 @@ const reactScriptsLinked =
   fs.lstatSync(reactScriptsPath).isSymbolicLink();
 
 // config before publish: we're in ./packages/react-scripts/config/
+// SCRIPTPRO CHANGE - REFERENCE scriptpro-react-scripts
 if (
   !reactScriptsLinked &&
-  __dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1
+  __dirname.indexOf(path.join('packages', 'scriptpro-react-scripts', 'config')) !== -1
 ) {
   module.exports = {
     dotenv: resolveOwn('template/.env'),

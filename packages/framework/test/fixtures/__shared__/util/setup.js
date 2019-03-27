@@ -36,8 +36,9 @@ module.exports = class TestSetup {
 
     const shouldInstallScripts = !this.isLocal;
     if (shouldInstallScripts) {
+      // SCRIPTPRO CHANGE - REFERENCE scriptpro-react-scripts
       packageJson.dependencies = Object.assign({}, packageJson.dependencies, {
-        'react-scripts': 'latest',
+        'scriptpro-react-scripts': 'latest',
       });
     }
     packageJson.scripts = Object.assign({}, packageJson.scripts, {

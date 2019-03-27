@@ -160,7 +160,7 @@ const Update = props => (
         content: `Updating your build tooling is typically a daunting and time-consuming task. When new versions of Create React App are released, you can upgrade using a single command:
 
 \`\`\`sh
-npm install react-scripts@latest
+npm install scriptpro-react-scripts@latest
 \`\`\``,
       },
     ]}
