@@ -131,7 +131,10 @@ if (program.info) {
         System: ['OS', 'CPU'],
         Binaries: ['Node', 'npm', 'Yarn'],
         Browsers: ['Chrome', 'Edge', 'Internet Explorer', 'Firefox', 'Safari'],
-        npmPackages: ['react', 'react-dom', 'react-scripts'],
+        // SCRIPTPRO CHANGE - CALL OUR PACKAGE
+        npmPackages: ['react', 'react-dom', 'scriptpro-react-scripts'],
+        // SCRIPTPRO CHANGE - CALL OUR PACKAGE
+
         npmGlobalPackages: ['create-react-app'],
       },
       {
@@ -488,7 +491,9 @@ function run(
 }
 
 function getInstallPackage(version, originalDirectory) {
-  let packageToInstall = 'react-scripts';
+  // SCRIPTPRO CHANGE - CALL OUR PACKAGE
+  let packageToInstall = 'scriptpro-react-scripts';
+  // END SCRIPTPRO CHANGE - CALL OUR PACKAGE
   const validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += `@${validSemver}`;
@@ -684,7 +689,9 @@ function checkAppName(appName) {
   }
 
   // TODO: there should be a single place that holds the dependencies
-  const dependencies = ['react', 'react-dom', 'react-scripts'].sort();
+  // SCRIPTPRO CHANGE - CALL OUR PACKAGE
+  const dependencies = ['react', 'react-dom', 'scriptpro-react-scripts'].sort();
+  // END SCRIPTPRO CHANGE - CALL OUR PACKAGE
   if (dependencies.indexOf(appName) >= 0) {
     console.error(
       chalk.red(
