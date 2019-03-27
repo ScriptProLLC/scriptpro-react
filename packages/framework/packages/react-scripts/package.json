@@ -1,6 +1,6 @@
 {
   "name": "scriptpro-react-scripts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebook/create-react-app",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/scriptpro-react-scripts.js"
+    "scriptpro-react-scripts": "./bin/scriptpro-react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
